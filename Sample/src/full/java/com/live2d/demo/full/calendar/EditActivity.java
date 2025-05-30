@@ -1,12 +1,18 @@
 package com.live2d.demo.full.calendar;
 import com.live2d.demo.R;
+
+import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -189,8 +195,10 @@ public class EditActivity extends BaseActivity {
                 alarmCalendar.set(Calendar.MINUTE, selectedAlarmMinute);
                 alarmCalendar.set(Calendar.SECOND, 0);
 
-                int requestCode = 0; // 또는 알림마다 고유한 숫자를 지정
+                int requestCode = (inputTitle + inputDate).hashCode();
+                AlarmScheduler.cancelAlarm(this);
                 AlarmManagerHelper.setAlarm(this, requestCode, inputTitle, alarmCalendar.getTimeInMillis());
+
             } catch (ParseException e) {
                 e.printStackTrace();
             }
@@ -215,13 +223,12 @@ public class EditActivity extends BaseActivity {
         Button btnConfirm = bottomSheetView.findViewById(R.id.btn_confirm_time);
 
         timePicker.setIs24HourView(true);
-
         btnConfirm.setOnClickListener(v -> {
             int hour;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 hour = timePicker.getHour();
             } else {
-                hour = timePicker.getCurrentHour(); // deprecated이지만 API 22 이하에서 사용 가능
+                hour = timePicker.getCurrentHour();
             }
             int minute;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -229,8 +236,15 @@ public class EditActivity extends BaseActivity {
             } else {
                 minute = timePicker.getCurrentMinute();
             }
+
+            // 선택한 시간으로 selectedAlarmHour/Minute 갱신
+            selectedAlarmHour = hour;
+            selectedAlarmMinute = minute;
+
+            // 텍스트뷰에도 반영
             tvAlarmTime.setText(String.format("%02d:%02d", selectedAlarmHour, selectedAlarmMinute));
 
+            // SharedPreferences에도 저장
             PreferenceManager.getDefaultSharedPreferences(this).edit()
                     .putInt("alarm_hour_" + etTitle.getText() + "_" + tvSelectedDate.getText(), selectedAlarmHour)
                     .putInt("alarm_minute_" + etTitle.getText() + "_" + tvSelectedDate.getText(), selectedAlarmMinute)
@@ -238,7 +252,6 @@ public class EditActivity extends BaseActivity {
 
             dialog.dismiss();
         });
-
         dialog.show();
     }
 
@@ -271,6 +284,37 @@ public class EditActivity extends BaseActivity {
         );
         timePickerDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         timePickerDialog.show();
+    }
+    public static void setAlarm(Context context, int requestCode, String title, long alarmTimeInMillis) {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+
+        Intent intent = new Intent(context, AlarmReceiver.class);
+        intent.putExtra("title", title);
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(
+                context,
+                requestCode,
+                intent,
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+        );
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            if (!alarmManager.canScheduleExactAlarms()) {
+                Intent permissionIntent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
+                permissionIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(permissionIntent);
+                Log.w("AlarmScheduler", "정확한 알람 권한이 없어 설정 화면으로 이동");
+                return;
+            }
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, alarmTimeInMillis, pendingIntent);
+        } else {
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTimeInMillis, pendingIntent);
+        }
+
+        Log.d("AlarmScheduler", "알람 예약됨: " + alarmTimeInMillis);
     }
 
 }
