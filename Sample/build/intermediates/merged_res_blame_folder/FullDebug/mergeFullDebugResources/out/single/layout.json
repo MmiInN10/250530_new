@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_splash.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_name_input.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_name_input.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/item_event.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/item_event.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_edit.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_edit.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/custom_toast.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/custom_toast.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_video_player.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_video_player.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_main.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_calendar.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/bottomsheet_alarm_time_picker.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/bottomsheet_alarm_time_picker.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_setting.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_add.xml",
+        "source": "com.live2d.demo.Sample-main-57:/layout/activity_add.xml"
+    }
+]

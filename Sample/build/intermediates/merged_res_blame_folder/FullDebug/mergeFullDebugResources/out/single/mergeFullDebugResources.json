@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_nav_item_selector.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\nav_item_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_access_time_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_access_time_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_setting.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_arrow_forward_ios_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_arrow_forward_ios_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\circle_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_home_filled_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_home_filled_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_item_event.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\item_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_bottomsheet_alarm_time_picker.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\bottomsheet_alarm_time_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_calendar_today_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_calendar_today_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_calendar_month_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_calendar_month_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_edit.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_circle_button.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\circle_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_priority_high_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_priority_high_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_add.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_arrow_back_ios_new_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_arrow_back_ios_new_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_alarm_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_alarm_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_calendar.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_ripple_background.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\ripple_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_name_input.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_name_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.live2d.demo.Sample-FullDebug-53:/raw_notification_video.mp4.flat",
+        "source": "com.live2d.demo.Sample-main-57:/raw/notification_video.mp4"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_check_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_check_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_video_player.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_ic_app_logo.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\ic_app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_toast_background.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\toast_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-Full-48:\\drawable-ldpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_custom_toast.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\custom_toast.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\raw_notification_video.mp4.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\raw\\notification_video.mp4"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_ic_notification.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\ic_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_edit_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_edit_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_delete_outline_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_delete_outline_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-FullDebug-53:\\drawable_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\drawable\\baseline_settings_24.xml"
+    }
+]

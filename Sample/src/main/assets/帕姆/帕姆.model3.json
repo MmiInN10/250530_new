@@ -1,0 +1,36 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "帕姆.moc3",
+		"Textures": [
+			"帕姆.2048/texture_00.png"
+		],
+		"Physics": "帕姆.physics3.json",
+		"DisplayInfo": "帕姆.cdi3.json",
+		"Motions": {
+			"TapBody": [
+				{ "Name": "motion1", "File": "motions/1.motion3.json" },
+				{ "Name": "motion2", "File": "motions/2.motion3.json" },
+				{ "Name": "motion3", "File": "motions/3.motion3.json" },
+				{ "Name": "motion4", "File": "motions/4.motion3.json" },
+				{ "Name": "motion5", "File": "motions/5.motion3.json" },
+				{ "Name": "motion6", "File": "motions/6.motion3.json" }
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
