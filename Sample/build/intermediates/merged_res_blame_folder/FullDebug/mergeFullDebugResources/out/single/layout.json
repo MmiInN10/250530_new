@@ -1,43 +1,51 @@
 [
     {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_splash.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_name_input.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_name_input.xml"
     },
     {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_name_input.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_name_input.xml"
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/item_event.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/item_event.xml"
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_calendar.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_calendar.xml"
     },
     {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_edit.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_edit.xml"
-    },
-    {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/custom_toast.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/custom_toast.xml"
-    },
-    {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_video_player.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_video_player.xml"
-    },
-    {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_main.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_calendar.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/activity_calendar.xml"
-    },
-    {
-        "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/bottomsheet_alarm_time_picker.xml",
-        "source": "com.live2d.demo.Sample-main-57:/layout/bottomsheet_alarm_time_picker.xml"
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_add.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_add.xml"
     },
     {
         "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_setting.xml",
         "source": "com.live2d.demo.Sample-main-57:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\custom_toast.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\custom_toast.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_edit.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\bottomsheet_alarm_time_picker.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\bottomsheet_alarm_time_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_setting.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_video_player.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-mergeFullDebugResources-52:\\layout\\item_event.xml",
+        "source": "C:\\Users\\MIN\\.gradle\\daemon\\8.11.1\\com.live2d.demo.Sample-main-57:\\layout\\item_event.xml"
     },
     {
         "merged": "com.live2d.demo.Sample-mergeFullDebugResources-52:/layout/activity_add.xml",

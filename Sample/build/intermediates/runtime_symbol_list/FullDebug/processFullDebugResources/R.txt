@@ -3387,7 +3387,6 @@ int id btn_confirm 0x7f080074
 int id btn_confirm_time 0x7f080075
 int id buttonPanel 0x7f080076
 int id button_calendar 0x7f080077
-int id button_cancel_notifications 0x7f080078
 int id button_main 0x7f080079
 int id button_setting 0x7f08007a
 int id cache_measures 0x7f08007b
@@ -3396,8 +3395,6 @@ int id callMeasure 0x7f08007d
 int id cancel_action 0x7f08007e
 int id cancel_button 0x7f08007f
 int id card_account_section 0x7f080080
-int id card_chatbot_settings 0x7f080081
-int id card_notification_settings 0x7f080082
 int id carryVelocity 0x7f080083
 int id center 0x7f080084
 int id centerCrop 0x7f080085
@@ -3797,9 +3794,7 @@ int id textSpacerNoTitle 0x7f08020e
 int id textStart 0x7f08020f
 int id textTop 0x7f080210
 int id textViewAccountLink 0x7f080211
-int id textViewChatbotSettings 0x7f080212
 int id textViewGreeting 0x7f080213
-int id textViewNotificationSettings 0x7f080214
 int id textWatcher 0x7f080215
 int id text_input_end_icon 0x7f080216
 int id text_input_error_icon 0x7f080217

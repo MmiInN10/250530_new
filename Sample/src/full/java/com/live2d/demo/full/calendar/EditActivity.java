@@ -107,8 +107,15 @@ public class EditActivity extends BaseActivity {
         // 알림 시간 텍스트 클릭 시 수정 가능
         tvAlarmTime.setOnClickListener(v -> showAlarmTimePickerBottomSheet());
 
+// 시작 시간, 종료 시간 텍스트뷰 클릭 시 시간 수정 가능
+        tvSelectedStartTime.setOnClickListener(v -> showMaterialTimePicker(true));
+        tvSelectedEndTime.setOnClickListener(v -> showMaterialTimePicker(false));
+
+// 기존에 있던 tvStartTime, tvEndTime 클릭도 유지 (필요 없으면 삭제 가능)
         tvStartTime.setOnClickListener(v -> showMaterialTimePicker(true));
         tvEndTime.setOnClickListener(v -> showMaterialTimePicker(false));
+
+// 날짜 이동 아이콘 클릭 시
         ivDateForward.setOnClickListener(v -> showDatePickerDialog());
 
         btnUpdate.setOnClickListener(v -> updateEvent());
@@ -245,16 +252,25 @@ public class EditActivity extends BaseActivity {
 
     private void showMaterialTimePicker(final boolean isStart) {
         Calendar calendar = Calendar.getInstance();
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this, (timePicker, hourOfDay, minute) -> {
-            String formattedTime = String.format("%02d:%02d", hourOfDay, minute);
-            if (isStart) {
-                tvSelectedStartTime.setText(formattedTime);
-                selectedStartTime = formattedTime;
-            } else {
-                tvSelectedEndTime.setText(formattedTime);
-                selectedEndTime = formattedTime;
-            }
-        }, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), true);
+        TimePickerDialog timePickerDialog = new TimePickerDialog(
+                this,
+                android.R.style.Theme_Holo_Light_Dialog_NoActionBar,
+                (timePicker, hourOfDay, minute) -> {
+                    String formattedTime = String.format("%02d:%02d", hourOfDay, minute);
+                    if (isStart) {
+                        tvSelectedStartTime.setText(formattedTime);
+                        selectedStartTime = formattedTime;
+                    } else {
+                        tvSelectedEndTime.setText(formattedTime);
+                        selectedEndTime = formattedTime;
+                    }
+                },
+                calendar.get(Calendar.HOUR_OF_DAY),
+                calendar.get(Calendar.MINUTE),
+                true // 24시간 형식
+        );
+        timePickerDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         timePickerDialog.show();
     }
+
 }

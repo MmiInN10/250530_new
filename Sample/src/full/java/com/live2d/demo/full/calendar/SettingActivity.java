@@ -95,18 +95,6 @@ public class SettingActivity extends BaseActivity {
 
         SignInButton signInButton = findViewById(R.id.btnGoogleSignIn);
         signInButton.setOnClickListener(v -> signInWithGoogle());
-        Button buttonCancelNotifications = findViewById(R.id.button_cancel_notifications);
-        buttonCancelNotifications.setOnClickListener(v -> {
-            new AlertDialog.Builder(SettingActivity.this)
-                    .setMessage("알림을 모두 해제할까요?")
-                    .setPositiveButton("예", (dialog, which) -> {
-                        // 알람 취소 로직
-                        cancelAllScheduledAlarms();
-                        showCustomToast("알림 해제 완료");
-                    })
-                    .setNegativeButton("아니요", null)
-                    .show();
-        });
 
     }
 
@@ -131,62 +119,6 @@ public class SettingActivity extends BaseActivity {
                 showCustomToast("계정 연동 완료");
 
             }
-        }
-    }
-    private void cancelAllScheduledAlarms() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        Map<String, ?> allPrefs = prefs.getAll();
-
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-
-        for (String key : allPrefs.keySet()) {
-            if (key.startsWith("alarm_request_code_")) {
-                int requestCode = prefs.getInt(key, -1);
-                if (requestCode != -1) {
-                    Intent intent = new Intent(this, AlarmReceiver.class);
-                    PendingIntent pendingIntent = PendingIntent.getBroadcast(
-                            this,
-                            requestCode,
-                            intent,
-                            PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
-                    );
-
-                    if (pendingIntent != null && alarmManager != null) {
-                        alarmManager.cancel(pendingIntent);
-                        pendingIntent.cancel();
-                        Log.d("AlarmCancel", "알람 취소 완료: requestCode=" + requestCode);
-                    }
-                }
-            }
-        }
-
-        // SharedPreferences에서 알람 관련 정보 삭제
-        SharedPreferences.Editor editor = prefs.edit();
-        for (String key : allPrefs.keySet()) {
-            if (key.startsWith("alarm_request_code_") ||
-                    key.startsWith("alarm_hour_") ||
-                    key.startsWith("alarm_minute_")) {
-                editor.remove(key);
-            }
-        }
-        editor.apply();
-    }
-
-    public static void cancelAlarmByRequestCode(Context context, int requestCode) {
-        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, AlarmReceiver.class);
-
-        PendingIntent pi = PendingIntent.getBroadcast(
-                context,
-                requestCode,
-                intent,
-                PendingIntent.FLAG_NO_CREATE | PendingIntent.FLAG_IMMUTABLE
-        );
-
-        if (pi != null && alarmManager != null) {
-            alarmManager.cancel(pi);
-            pi.cancel();
-            Log.d("AlarmManagerHelper", "알람 취소 완료: requestCode=" + requestCode);
         }
     }
 

@@ -4,7 +4,7 @@
             "outputFile": "com.live2d.demo.Sample-mergeFullDebugResources-51:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\8.11.1\\transforms\\03861d515695ac2ab8d4a13e4bda3ed1\\transformed\\material-1.11.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\MIN\\.gradle\\caches\\8.11.1\\transforms\\03861d515695ac2ab8d4a13e4bda3ed1\\transformed\\material-1.11.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

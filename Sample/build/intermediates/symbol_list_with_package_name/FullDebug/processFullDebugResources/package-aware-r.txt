@@ -3388,7 +3388,6 @@ id btn_confirm
 id btn_confirm_time
 id buttonPanel
 id button_calendar
-id button_cancel_notifications
 id button_main
 id button_setting
 id cache_measures
@@ -3397,8 +3396,6 @@ id callMeasure
 id cancel_action
 id cancel_button
 id card_account_section
-id card_chatbot_settings
-id card_notification_settings
 id carryVelocity
 id center
 id centerCrop
@@ -3798,9 +3795,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textViewAccountLink
-id textViewChatbotSettings
 id textViewGreeting
-id textViewNotificationSettings
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon

@@ -162,6 +162,7 @@ public class MainActivity extends Activity {
 // 2. "악세서리 선택" 버튼 생성
         Button accessoryMenuButton = new Button(this);
         accessoryMenuButton.setText("악세서리 선택");
+        accessoryMenuButton.setTextSize(20);
 
         ConstraintLayout.LayoutParams menuButtonParams = new ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.WRAP_CONTENT,
@@ -169,13 +170,14 @@ public class MainActivity extends Activity {
         );
         menuButtonParams.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID;
         menuButtonParams.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID;
-        menuButtonParams.setMargins(0, 0, 50, 320);
+        menuButtonParams.setMargins(0, 0, 50, 350);
 
         accessoryMenuButton.setLayoutParams(menuButtonParams);
 
 // 3. "악세서리 제거" 버튼 생성
         Button removeAccessoryButton = new Button(this);
         removeAccessoryButton.setText("악세서리 제거");
+        removeAccessoryButton.setTextSize(20);
 
         ConstraintLayout.LayoutParams removeButtonParams = new ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.WRAP_CONTENT,
@@ -183,7 +185,7 @@ public class MainActivity extends Activity {
         );
         removeButtonParams.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID;
         removeButtonParams.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID;
-        removeButtonParams.setMargins(0, 0, 50, 220);
+        removeButtonParams.setMargins(0, 0, 50, 240);
 
         removeAccessoryButton.setLayoutParams(removeButtonParams);
 
@@ -301,6 +303,8 @@ public class MainActivity extends Activity {
         // 🆕 "말하기" 버튼
         Button recordButton = new Button(this);
         recordButton.setText("말하기");
+        recordButton.setTextSize(20);
+
         ConstraintLayout.LayoutParams recordButtonParams = new ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.WRAP_CONTENT,
                 ConstraintLayout.LayoutParams.WRAP_CONTENT

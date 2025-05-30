@@ -40,13 +40,10 @@ id btn_add
 id btn_confirm
 id btn_confirm_time
 id button_calendar
-id button_cancel_notifications
 id button_main
 id button_setting
 id calendarView
 id card_account_section
-id card_chatbot_settings
-id card_notification_settings
 id container
 id date_selection_layout
 id delete_container
@@ -69,9 +66,7 @@ id logoImage
 id root_layout
 id switch_time
 id textViewAccountLink
-id textViewChatbotSettings
 id textViewGreeting
-id textViewNotificationSettings
 id time_picker
 id time_picker_layout
 id time_selection_layout

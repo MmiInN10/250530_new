@@ -4,7 +4,6 @@ package com.live2d.demo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -32,9 +31,6 @@ public final class ActivitySettingBinding implements ViewBinding {
   public final ImageButton buttonCalendar;
 
   @NonNull
-  public final Button buttonCancelNotifications;
-
-  @NonNull
   public final ImageButton buttonMain;
 
   @NonNull
@@ -44,51 +40,32 @@ public final class ActivitySettingBinding implements ViewBinding {
   public final CardView cardAccountSection;
 
   @NonNull
-  public final CardView cardChatbotSettings;
-
-  @NonNull
-  public final CardView cardNotificationSettings;
-
-  @NonNull
   public final ImageView imageViewEdit;
 
   @NonNull
   public final TextView textViewAccountLink;
 
   @NonNull
-  public final TextView textViewChatbotSettings;
-
-  @NonNull
   public final TextView textViewGreeting;
-
-  @NonNull
-  public final TextView textViewNotificationSettings;
 
   @NonNull
   public final LinearLayout topBar;
 
   private ActivitySettingBinding(@NonNull ConstraintLayout rootView,
       @NonNull SignInButton btnGoogleSignIn, @NonNull ImageButton buttonCalendar,
-      @NonNull Button buttonCancelNotifications, @NonNull ImageButton buttonMain,
-      @NonNull ImageButton buttonSetting, @NonNull CardView cardAccountSection,
-      @NonNull CardView cardChatbotSettings, @NonNull CardView cardNotificationSettings,
-      @NonNull ImageView imageViewEdit, @NonNull TextView textViewAccountLink,
-      @NonNull TextView textViewChatbotSettings, @NonNull TextView textViewGreeting,
-      @NonNull TextView textViewNotificationSettings, @NonNull LinearLayout topBar) {
+      @NonNull ImageButton buttonMain, @NonNull ImageButton buttonSetting,
+      @NonNull CardView cardAccountSection, @NonNull ImageView imageViewEdit,
+      @NonNull TextView textViewAccountLink, @NonNull TextView textViewGreeting,
+      @NonNull LinearLayout topBar) {
     this.rootView = rootView;
     this.btnGoogleSignIn = btnGoogleSignIn;
     this.buttonCalendar = buttonCalendar;
-    this.buttonCancelNotifications = buttonCancelNotifications;
     this.buttonMain = buttonMain;
     this.buttonSetting = buttonSetting;
     this.cardAccountSection = cardAccountSection;
-    this.cardChatbotSettings = cardChatbotSettings;
-    this.cardNotificationSettings = cardNotificationSettings;
     this.imageViewEdit = imageViewEdit;
     this.textViewAccountLink = textViewAccountLink;
-    this.textViewChatbotSettings = textViewChatbotSettings;
     this.textViewGreeting = textViewGreeting;
-    this.textViewNotificationSettings = textViewNotificationSettings;
     this.topBar = topBar;
   }
 
@@ -131,12 +108,6 @@ public final class ActivitySettingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button_cancel_notifications;
-      Button buttonCancelNotifications = ViewBindings.findChildViewById(rootView, id);
-      if (buttonCancelNotifications == null) {
-        break missingId;
-      }
-
       id = R.id.button_main;
       ImageButton buttonMain = ViewBindings.findChildViewById(rootView, id);
       if (buttonMain == null) {
@@ -155,18 +126,6 @@ public final class ActivitySettingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.card_chatbot_settings;
-      CardView cardChatbotSettings = ViewBindings.findChildViewById(rootView, id);
-      if (cardChatbotSettings == null) {
-        break missingId;
-      }
-
-      id = R.id.card_notification_settings;
-      CardView cardNotificationSettings = ViewBindings.findChildViewById(rootView, id);
-      if (cardNotificationSettings == null) {
-        break missingId;
-      }
-
       id = R.id.imageViewEdit;
       ImageView imageViewEdit = ViewBindings.findChildViewById(rootView, id);
       if (imageViewEdit == null) {
@@ -179,21 +138,9 @@ public final class ActivitySettingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textViewChatbotSettings;
-      TextView textViewChatbotSettings = ViewBindings.findChildViewById(rootView, id);
-      if (textViewChatbotSettings == null) {
-        break missingId;
-      }
-
       id = R.id.textViewGreeting;
       TextView textViewGreeting = ViewBindings.findChildViewById(rootView, id);
       if (textViewGreeting == null) {
-        break missingId;
-      }
-
-      id = R.id.textViewNotificationSettings;
-      TextView textViewNotificationSettings = ViewBindings.findChildViewById(rootView, id);
-      if (textViewNotificationSettings == null) {
         break missingId;
       }
 
@@ -204,9 +151,8 @@ public final class ActivitySettingBinding implements ViewBinding {
       }
 
       return new ActivitySettingBinding((ConstraintLayout) rootView, btnGoogleSignIn,
-          buttonCalendar, buttonCancelNotifications, buttonMain, buttonSetting, cardAccountSection,
-          cardChatbotSettings, cardNotificationSettings, imageViewEdit, textViewAccountLink,
-          textViewChatbotSettings, textViewGreeting, textViewNotificationSettings, topBar);
+          buttonCalendar, buttonMain, buttonSetting, cardAccountSection, imageViewEdit,
+          textViewAccountLink, textViewGreeting, topBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
