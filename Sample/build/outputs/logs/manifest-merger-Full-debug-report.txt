@@ -2,9 +2,9 @@
 manifest
 ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\main\AndroidManifest.xml:2:1-8:12
 MERGED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:2:1-57:12
 MERGED from [Live2DCubismCore.aar] C:\Users\MIN\.gradle\caches\8.11.1\transforms\528809e8c17d42e14066f18469e300c2\transformed\jetified-Live2DCubismCore\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:databinding-adapters:8.9.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\724893131af3185944e720f1049edc64\transformed\databinding-adapters-8.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.9.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\1dca205a4990b82d3e5c80fabf1e9296\transformed\databinding-runtime-8.9.0\AndroidManifest.xml:2:1-7:12
@@ -165,9 +165,21 @@ uses-permission#android.permission.SCHEDULE_EXACT_ALARM
 ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:13:5-78
 	android:name
 		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\8aee9f053f7e6a9a79285ced9a740910\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\8aee9f053f7e6a9a79285ced9a740910\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\908ca8a74a096674b4b114a22e51e76e\transformed\jetified-play-services-cloud-messaging-17.1.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\908ca8a74a096674b4b114a22e51e76e\transformed\jetified-play-services-cloud-messaging-17.1.0\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:15:22-74
 application
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:14:5-52:19
-INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:14:5-52:19
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:17:5-55:19
+INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:17:5-55:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\03861d515695ac2ab8d4a13e4bda3ed1\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\03861d515695ac2ab8d4a13e4bda3ed1\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\2dc15b2b1eaa8e2d8de4dc89898ca6a4\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -233,81 +245,81 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\MI
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\d62fbcca02ee958be1fa433427ea8e7f\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:17:9-41
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:15:9-36
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:18:9-36
 	android:theme
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:20:9-40
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:23:9-40
 activity#com.live2d.demo.full.calendar.SplashActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:22:9-29:20
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:25:9-32:20
 	android:exported
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:23:13-57
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:26:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:25:13-28:29
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:26:17-68
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:29:17-68
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:27:17-76
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:30:17-76
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:30:27-74
 activity#com.live2d.demo.full.MainActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:31:9-40:20
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:34:9-43:20
 	android:launchMode
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:33:13-43
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:36:13-43
 	android:exported
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:35:13-36
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:38:13-36
 	android:configChanges
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:34:13-59
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:37:13-59
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:32:13-46
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:35:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:36:13-39:29
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:39:13-42:29
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:38:17-76
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:38:27-73
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:41:27-73
 activity#com.live2d.demo.full.calendar.CalendarActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:43:9-68
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:46:9-68
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:43:19-65
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:46:19-65
 activity#com.live2d.demo.full.calendar.SettingActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:44:9-67
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:47:9-67
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:44:19-64
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:47:19-64
 activity#com.live2d.demo.full.calendar.AddActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:45:9-63
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:48:9-63
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:45:19-60
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:48:19-60
 activity#com.live2d.demo.full.calendar.EditActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:46:9-64
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:49:9-64
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:46:19-61
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:49:19-61
 activity#com.live2d.demo.full.calendar.NameInputActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:47:9-69
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:50:9-69
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:47:19-66
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:50:19-66
 receiver#com.live2d.demo.full.calendar.AlarmReceiver
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:48:9-89
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:51:9-89
 	android:exported
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:48:63-86
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:51:63-86
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:48:19-62
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:51:19-62
 activity#com.live2d.demo.full.calendar.VideoPlayerActivity
-ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:49:9-51:39
+ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:52:9-54:39
 	android:exported
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:51:13-36
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:54:13-36
 	android:name
-		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:50:13-62
+		ADDED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml:53:13-62
 uses-sdk
 INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\MIN\AndroidStudioProjects\new-main\Sample\src\Full\AndroidManifest.xml
@@ -592,12 +604,6 @@ ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\MIN\.gradle\cache
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\e62b8922c3cc694bfad7c564e22dd7ae\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\e62b8922c3cc694bfad7c564e22dd7ae\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\8aee9f053f7e6a9a79285ced9a740910\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\908ca8a74a096674b4b114a22e51e76e\transformed\jetified-play-services-cloud-messaging-17.1.0\AndroidManifest.xml:9:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\908ca8a74a096674b4b114a22e51e76e\transformed\jetified-play-services-cloud-messaging-17.1.0\AndroidManifest.xml:9:5-68
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\8aee9f053f7e6a9a79285ced9a740910\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:22-65
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\MIN\.gradle\caches\8.11.1\transforms\8aee9f053f7e6a9a79285ced9a740910\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] C:\Users\MIN\.gradle\caches\8.11.1\transforms\908ca8a74a096674b4b114a22e51e76e\transformed\jetified-play-services-cloud-messaging-17.1.0\AndroidManifest.xml:11:5-82

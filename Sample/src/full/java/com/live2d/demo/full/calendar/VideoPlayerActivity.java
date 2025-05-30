@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.VideoView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,6 +22,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         VideoView videoView = findViewById(R.id.videoView);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         // 예: res/raw/notification_video.mp4 재생
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_video);

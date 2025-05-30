@@ -31,10 +31,8 @@ public class AlarmReceiver extends BroadcastReceiver {
         videoIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(videoIntent);
     }
-
-
     private void showNotification(Context context, String title) {
-        Intent launchIntent = new Intent(context, MainActivity.class);
+        Intent launchIntent = new Intent(context, VideoPlayerActivity.class);
         launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(
@@ -75,6 +73,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                     .notify((int) System.currentTimeMillis(), builder.build());
         }
     }
+
     private void playVideo(Context context) {
             Intent videoIntent = new Intent(context, VideoPlayerActivity.class);
             videoIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
