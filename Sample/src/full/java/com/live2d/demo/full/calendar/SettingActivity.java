@@ -7,9 +7,11 @@ import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,10 +24,11 @@ import com.google.android.gms.common.SignInButton;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.util.ExponentialBackOff;
 import com.google.api.services.calendar.CalendarScopes;
-import com.jakewharton.processphoenix.ProcessPhoenix;
 import com.live2d.demo.R;
 import com.live2d.demo.full.MainActivity;
 import java.util.Collections;
+import java.util.Map;
+
 import android.widget.Button;
 import com.live2d.demo.full.calendar.AlarmManagerHelper;
 
@@ -45,7 +48,8 @@ public class SettingActivity extends BaseActivity {
         ImageButton buttonSetting = findViewById(R.id.button_setting);
 
         buttonMain.setOnClickListener(v -> {
-            ProcessPhoenix.triggerRebirth(SettingActivity.this);
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
         });
 
         buttonCalendar.setOnClickListener(v -> {
@@ -91,40 +95,17 @@ public class SettingActivity extends BaseActivity {
 
         SignInButton signInButton = findViewById(R.id.btnGoogleSignIn);
         signInButton.setOnClickListener(v -> signInWithGoogle());
-
         Button buttonCancelNotifications = findViewById(R.id.button_cancel_notifications);
-        buttonCancelNotifications.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new AlertDialog.Builder(SettingActivity.this)
-                        .setTitle("알람 해제")
-                        .setMessage("전체 알람을 해제하시겠습니까?")
-                        .setPositiveButton("예", (dialog, which) -> {
-                            AlarmManagerHelper.cancelAllAlarms(SettingActivity.this);
-                            showCustomToast("알림 해제 완료");
-                        })
-                        .setNegativeButton("아니요", null)
-                        .show();
-            }
-        });
-        buttonCancelNotifications.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new AlertDialog.Builder(SettingActivity.this)
-                        .setTitle("알람 해제")
-                        .setMessage("전체 알람을 해제하시겠습니까?")
-                        .setPositiveButton("예", (dialog, which) -> {
-                            // 푸시 알림 전체 취소
-                            AlarmManagerHelper.cancelAllAlarms(SettingActivity.this);
-
-                            // 챗봇 알림도 함께 취소
-                            AlarmManagerHelper.ChatbotAlarmHelper.cancelChatbotAlarm(SettingActivity.this);
-
-                            showCustomToast("알림 해제 완료");
-                        })
-                        .setNegativeButton("아니요", null)
-                        .show();
-            }
+        buttonCancelNotifications.setOnClickListener(v -> {
+            new AlertDialog.Builder(SettingActivity.this)
+                    .setMessage("알림을 모두 해제할까요?")
+                    .setPositiveButton("예", (dialog, which) -> {
+                        // 알람 취소 로직
+                        cancelAllScheduledAlarms();
+                        showCustomToast("알림 해제 완료");
+                    })
+                    .setNegativeButton("아니요", null)
+                    .show();
         });
 
     }
@@ -150,6 +131,62 @@ public class SettingActivity extends BaseActivity {
                 showCustomToast("계정 연동 완료");
 
             }
+        }
+    }
+    private void cancelAllScheduledAlarms() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        Map<String, ?> allPrefs = prefs.getAll();
+
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+        for (String key : allPrefs.keySet()) {
+            if (key.startsWith("alarm_request_code_")) {
+                int requestCode = prefs.getInt(key, -1);
+                if (requestCode != -1) {
+                    Intent intent = new Intent(this, AlarmReceiver.class);
+                    PendingIntent pendingIntent = PendingIntent.getBroadcast(
+                            this,
+                            requestCode,
+                            intent,
+                            PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+                    );
+
+                    if (pendingIntent != null && alarmManager != null) {
+                        alarmManager.cancel(pendingIntent);
+                        pendingIntent.cancel();
+                        Log.d("AlarmCancel", "알람 취소 완료: requestCode=" + requestCode);
+                    }
+                }
+            }
+        }
+
+        // SharedPreferences에서 알람 관련 정보 삭제
+        SharedPreferences.Editor editor = prefs.edit();
+        for (String key : allPrefs.keySet()) {
+            if (key.startsWith("alarm_request_code_") ||
+                    key.startsWith("alarm_hour_") ||
+                    key.startsWith("alarm_minute_")) {
+                editor.remove(key);
+            }
+        }
+        editor.apply();
+    }
+
+    public static void cancelAlarmByRequestCode(Context context, int requestCode) {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, AlarmReceiver.class);
+
+        PendingIntent pi = PendingIntent.getBroadcast(
+                context,
+                requestCode,
+                intent,
+                PendingIntent.FLAG_NO_CREATE | PendingIntent.FLAG_IMMUTABLE
+        );
+
+        if (pi != null && alarmManager != null) {
+            alarmManager.cancel(pi);
+            pi.cancel();
+            Log.d("AlarmManagerHelper", "알람 취소 완료: requestCode=" + requestCode);
         }
     }
 
